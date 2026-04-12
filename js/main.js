@@ -291,6 +291,27 @@ const sampleUsers = [
     { id: 10, name: 'Jessica Taylor', email: 'jessica.taylor@company.com', department: 'HR', role: 'Auditor', status: 'Active' }
 ];
 
+const sampleDocumentsWithRoutes = [
+    {
+        id: 'DOC-2026-001',
+        title: 'Payroll',
+        type: 'HR Document',
+        sender: 'HR Department',
+        receiver: 'Legal Department',
+        status: 'Pending Transfer',
+        dateUploaded: '2024-01-12 11:00:00',
+        dateReceived: null,
+        uploadedBy: 'Emily Davis',
+        receivedBy: null,
+        description: 'Payroll for regular Personnel.',
+        routes: ['HR', 'Accounting Office', 'Cashier', 'Budget Office'],
+        history: [
+            { action: 'Document Uploaded', user: 'Emily Davis', department: 'HR', timestamp: '2024-01-12 11:00:00' },
+            { action: 'QR Code Generated', user: 'System', department: 'HR', timestamp: '2024-01-12 11:00:05' }
+        ]
+    }
+];
+
 const departments = [
     'Executive Office',
     'Finance',
